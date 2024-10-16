@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <h1>Rahul Kumar Singh</h1>
+        <div class="page2">
+            <h3><a href="#home">Home</a></h3>
+            <h3><a href="#About">About</a></h3>
+            <h3><a href="#skills">Skills</a></h3>
+            <h3><a href="#Projects">Projects</a></h3>
+            <h3><a href="#Contact">Contact Me</a></h3>
+            <h2 id="dark-mode"> <i class="fa-solid fa-moon"></i></h2>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div class="home" id="home">
+        <div class="image">
+            <img src="images/img.png" class="myImage" />
+        </div>
+        <div class="lines">
+            <div class="line1">
+                <h2>Hii, I'm Rahul</h2>
+            </div>
+            <div class="line2">
+                <h1>FRONT-END</h1>
+            </div>
+            <div class="line3">
+                <h1>WEB DEVELOPER</h1>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="mybtn"><a href="#skills">View Skills</a></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="About" id="About">
+        <h1>About Me</h1>
+        <div class="intro">
+            <p>I am currently a final year student of computer science engineering, with strong technical and academic
+                skills. I am continuously learning and enhancing my skills to the next level. I am passionate towards
+                programming and eager to solve real-world problems.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/rahul-singh03" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rahul-kumar-singh-901812242/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.hackerrank.com/profile/rahulsingh372001" target="_blank" title="HackerRank">
+                <i class="fab fa-hackerrank"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Technical Skills Section -->
+    <div class="skills" id="skills">
+        <h1>Technical Skills</h1>
+        <div class="images">
+            <div>
+                <img src="images/c.png" alt="" class="c icon">
+            </div>
+            <div>
+                <img src="images/cpp.png" alt="" class="cpp icon">
+            </div>
+            <div>
+                <img src="images/html.png" alt="" class="html icon">
+            </div>
+            <div>
+                <img src="images/css.png" alt="" class="css icon">
+            </div>
+            <div>
+                <img src="images/js.png" alt="" class="js icon">
+            </div>
+            <div>
+                <img src="images/react.png" alt="" class="react icon">
+            </div>
+            <div>
+                <img src="images/python.png" alt="" class="python icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="Projects" id="Projects">
+        <h1>Some of My Recent Projects</h1>
+        <div class="boxes">
+            <div class="box">
+                <img src="images/Skin.png" class="Skin">
+                <h3>Skin-Disease-Detection Website</h3>
+                <h2> <a href="https://github.com/rahul-singh03/Skin-Disease-Detection" target="_blank">Check it Out</a>
+                </h2>
+            </div>
+            <div class="box">
+                <img src="images/Netflix.png" class="Netflix">
+                <h3>Netflix-Clone Website</h3>
+                <h2> <a href="https://github.com/rahul-singh03/Netflix-Clone" target="_blank">Check it Out</a></h2>
+            </div>
+            <div class="box">
+                <img src="images/Spotify.png" class="Spotify">
+                <h3>Spotify-Clone Website</h3>
+                <h2> <a href="https://github.com/rahul-singh03/Spotify-Clone" target="_blank">Check it Out</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="Contact" id="Contact">
+        <h1>Contact Me</h1>
+        <form id="myForm">
+            <div class="form">
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message"><strong>Message</strong></label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button class="btnSubmit" type="submit"><strong>Submit</strong></button>
+                <div id="formOutput">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

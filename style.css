@@ -1,0 +1,572 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Disable text selection */
+h1,
+h2,
+h3,
+p,
+a,
+button,
+div {
+    user-select: none;
+}
+
+/* Mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: black;
+    z-index: 1000; /* Keep navbar above other content */
+}
+.nav h1 {
+    font-size: xx-large;
+}
+.nav h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.page2 {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.page2 h3 {
+    font-size: x-large;
+}
+
+.page2 h3 a {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 1s ease;
+}
+
+.page2 h3 a:hover {
+    border-bottom: 3px solid white;
+}
+
+.light-mode .nav {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .nav h3 a {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .page2 h3 a {
+    border-bottom: 3px solid transparent;
+}
+
+.light-mode .page2 h3 a:hover {
+    border-bottom: 3px solid black;
+}
+
+/* Centered Sections */
+.home,
+.Projects,
+.skills,
+.About,
+.Contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.skills {
+    padding-top: 50px;
+}
+
+/* Home Section */
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.myImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.line1 {
+    text-align: center;
+    font-size: larger;
+}
+
+.line2,
+.line3 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.mybtn {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.mybtn:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.light-mode .home {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .btn a {
+    background-color: black;
+    color: white;
+}
+
+.light-mode .mybtn {
+    background-color: black;
+    color: white;
+}
+
+.light-mode .mybtn:hover {
+    background-color: rgb(24, 23, 23);
+}
+
+/* Projects Section */
+.Projects {
+    text-align: center;
+}
+
+.boxes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    height: 380px;
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.box .Skin,
+.box .Netflix,
+.box .Spotify {
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
+.Skin {
+    height: 140px;
+}
+
+.Netflix {
+    height: 110px;
+}
+
+.Spotify {
+    height: 115px;
+}
+
+.light-mode .Projects {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .box {
+    border: 2px solid black;
+}
+
+.light-mode .box .Skin,
+.light-mode .box .Netflix,
+.light-mode .box .Spotify {
+    border: 2px solid black;
+}
+
+/* Technical Skills Section */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.skills h1 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.images {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+
+.light-mode .skills {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .skills h1 {
+    color: black;
+}
+
+/* Position icons around the circle */
+.css,
+.js,
+.react,
+.python,
+.c,
+.cpp,
+.html {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.css {
+    transform: translate(-50%, -50%) rotate(0deg) translate(130px) rotate(0deg);
+}
+
+.js {
+    transform: translate(-50%, -50%) rotate(51.42deg) translate(130px) rotate(-51.42deg);
+}
+
+.react {
+    transform: translate(-50%, -50%) rotate(102.84deg) translate(130px) rotate(-102.84deg);
+}
+
+.python {
+    transform: translate(-50%, -50%) rotate(154.26deg) translate(130px) rotate(-154.26deg);
+}
+
+.c {
+    transform: translate(-50%, -50%) rotate(205.68deg) translate(130px) rotate(-205.68deg);
+}
+
+.cpp {
+    transform: translate(-50%, -50%) rotate(257.1deg) translate(130px) rotate(-257.1deg);
+}
+
+.html {
+    transform: translate(-50%, -50%) rotate(308.52deg) translate(130px) rotate(-308.52deg);
+}
+
+/* About Section */
+.About {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px;
+}
+
+.About h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.About .intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.About .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.About .social-links a {
+    color: white;
+    font-size: 2rem;
+}
+
+.light-mode .About {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .About .social-links a {
+    color: black;
+}
+
+/* Contact Section */
+.light-mode .Contact {
+    background-color: white;
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form label,
+.form input,
+.form textarea {
+    margin-bottom: 15px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form input,
+.form textarea {
+    padding: 10px;
+}
+
+.form .btnSubmit {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.light-mode .form input,
+.light-mode .form textarea {
+    border: 2px solid black;
+}
+
+.light-mode .form .btnSubmit {
+    border: 2px solid black;
+}
+
+#formOutput {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness*/
+
+/* For screen widths less than or equal to 1024px (Tablets) */
+@media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav h1 {
+        font-size: x-large;
+    }
+
+    .page2 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: max-content;
+    }
+
+    .page2 h3 {
+        font-size: larger;
+    }
+
+    .myImage {
+        height: 150px;
+        width: 150px;
+    }
+
+    .line1 {
+        font-size: large;
+    }
+
+    .line2,
+    .line3 {
+        font-size: larger;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 320px;
+        height: 330px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .form label,
+    .form input,
+    .form textarea {
+        width: 350px;
+    }
+
+    .form .btnSubmit {
+        width: 150px;
+    }
+}
+
+/* For screen widths less than or equal to 768px (Large Mobile Phones) */
+@media (max-width: 768px) {
+    .nav h1 {
+        font-size: larger;
+    }
+
+    .page2 h3 {
+        font-size: large;
+    }
+
+    .myImage {
+        height: 120px;
+        width: 120px;
+    }
+
+    .line1 {
+        font-size: medium;
+    }
+
+    .line2,
+    .line3 {
+        font-size: large;
+    }
+
+    .box {
+        width: 300px;
+        height: 250px;
+    }
+
+    .Skin,
+    .Netflix,
+    .Spotify {
+        height: 100px;
+    }
+
+    .box h3 {
+        font-size: medium;
+    }
+
+    .box h2 {
+        font-size: small;
+    }
+
+    .images {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form label,
+    .form input,
+    .form textarea {
+        width: 300px;
+    }
+}
+
+/* For screen widths less than or equal to 480px (Mobile Phones) */
+@media (max-width: 480px) {
+    .nav h1 {
+        font-size: large;
+    }
+
+    .page2 {
+        gap: 15px;
+    }
+
+    .page2 h3 {
+        font-size: medium;
+    }
+
+    .myImage {
+        height: 100px;
+        width: 100px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        font-size: small;
+    }
+
+    .box .Skin,
+    .box .Netflix,
+    .box .Spotify {
+        margin-top: 20px;
+    }
+
+    .box {
+        width: 280px;
+        height: 200px;
+    }
+}
